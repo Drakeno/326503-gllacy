@@ -49,7 +49,7 @@
       <ul>
         <li><a href="/">Главная</a></li>
         <li><a href="#">Каталог</a></li>
-        <li>Сливочное</li>
+        <li><a>Сливочное</a></li>
       </ul>
     </div>
     <h1>Сливочное мороженое</h1>
@@ -59,13 +59,13 @@
         <div class="first-choose-line clearfix">
           <div class="sort-choose left">
             <label for="sort">Сортировка:</label>
-            <select name="sort">
+            <select name="sort" id="sort">
               <option value="popularity">По популярности</option>
             </select>
           </div>
           <div class="price-choose left">
             <label for="price">Цена: 100 руб. – 500 руб.</label>
-            <input name="price" type="range" min="100" max="500">
+            <input name="price" id="price" type="range" min="100" max="500">
           </div>
           <div class="fatness-choose left">
             <span>Жирность:</span>
@@ -112,7 +112,7 @@
         <div class="fastview">
           <div class="item">
             <a href="#" class="item-image">
-              <img src="img/orange-citrus-ice-cream.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              <img src="img/orange-citrus.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             </a>
             <span class="price">
             <span class="price-number">310 &#8381;</span>
@@ -120,12 +120,12 @@
             </span>
             <h2><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h2>
           </div>
-          <a onclick="#" class="btn btn-small" href="#">Быстрый просмотр</a>
+          <a class="btn btn-small" href="#">Быстрый просмотр</a>
         </div>
         <div class="fastview">
           <div class="item">
             <a href="#" class="item-image">
-              <img src="img/coffee-chocolate-flakes-ice-cream.jpg" alt="Сливочно-кофейное с кусочками шоколада">
+              <img src="img/coffee-chocolate.jpg" alt="Сливочно-кофейное с кусочками шоколада">
             </a>
             <span class="price">
             <span class="price-number">380 &#8381;</span>
@@ -133,12 +133,12 @@
             </span>
             <h2><a href="#">Сливочно-кофейное с кусочками шоколада</a></h2>
           </div>
-          <a onclick="#" class="btn btn-small" href="#">Быстрый просмотр</a>
+          <a class="btn btn-small" href="#">Быстрый просмотр</a>
         </div>
         <div class="fastview">
           <div class="item">
             <a href="#" class="item-image">
-              <img src="img/strawberry-white-chocolate-ice-cream.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              <img src="img/strawberry-white-chocolate.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             </a>
             <span class="price">
             <span class="price-number">355 &#8381;</span>
@@ -146,12 +146,12 @@
             </span>
             <h2><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h2>
           </div>
-          <a onclick="#" class="btn btn-small" href="#">Быстрый просмотр</a>
+          <a class="btn btn-small" href="#">Быстрый просмотр</a>
         </div>
         <div class="fastview">
           <div class="item">
             <a href="#" class="item-image">
-              <img src="img/creme-brulee-caramel-ice-cream.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
+              <img src="img/creme-brulee-caramel.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
             </a>
             <span class="price">
             <span class="price-number">415 &#8381;</span>
@@ -159,7 +159,7 @@
             </span>
             <h2><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h2>
           </div>
-          <a onclick="#" class="btn btn-small" href="#">Быстрый просмотр</a>
+          <a class="btn btn-small" href="#">Быстрый просмотр</a>
         </div>
       </div>
       <!--2 ряд-->
@@ -167,7 +167,7 @@
         <div class="fastview">
           <div class="item">
             <a href="#" class="item-image">
-              <img src="img/cowberry-ice-cream.jpg" alt="Сливочное с брусничным джемом">
+              <img src="img/cowberry.jpg" alt="Сливочное с брусничным джемом">
             </a>
             <span class="price">
             <span class="price-number">325 &#8381;</span>
@@ -175,12 +175,12 @@
             </span>
             <h2><a href="#">Сливочное с брусничным джемом</a></h2>
           </div>
-          <a onclick="#" class="btn btn-small" href="#">Быстрый просмотр</a>
+          <a class="btn btn-small" href="#">Быстрый просмотр</a>
         </div>
         <div class="fastview">
           <div class="item">
             <a href="#" class="item-image">
-              <img src="img/bilberry-ice-cream.jpg" alt="Сливочно-черничное с цельными ягодами черники">
+              <img src="img/bilberry.jpg" alt="Сливочно-черничное с цельными ягодами черники">
             </a>
             <span class="price">
             <span class="price-number">410 &#8381;</span>
@@ -188,12 +188,12 @@
             </span>
             <h2><a href="#">Сливочно-черничное с цельными ягодами черники</a></h2>
           </div>
-          <a onclick="#" class="btn btn-small" href="#">Быстрый просмотр</a>
+          <a class="btn btn-small" href="#">Быстрый просмотр</a>
         </div>
         <div class="fastview">
           <div class="item">
             <a href="#" class="item-image">
-              <img src="img/lemon-caramel-ice-cream.jpg" alt="Сливочно-лимонное с карамельной присыпкой">
+              <img src="img/lemon-caramel.jpg" alt="Сливочно-лимонное с карамельной присыпкой">
             </a>
             <span class="price">
             <span class="price-number">375 &#8381;</span>
@@ -201,20 +201,20 @@
             </span>
             <h2><a href="#">Сливочно-лимонное с карамельной присыпкой</a></h2>
           </div>
-          <a onclick="#" class="btn btn-small" href="#">Быстрый просмотр</a>
+          <a class="btn btn-small" href="#">Быстрый просмотр</a>
         </div>
         <div class="fastview">
           <div class="item">
             <a href="#" class="item-image">
-              <img src="img/chocolate-flakes-ice-cream.jpg.jpg" alt="Сливочное с шоколадной стружкой">
+              <img src="img/chocolate-flakes.jpg" alt="Сливочное с шоколадной стружкой">
             </a>
             <span class="price">
             <span class="price-number">320 &#8381;</span>
             <span>/кг</span>
             </span>
-          <h2>  <a href="#">Сливочное с шоколадной стружкой</a></h2>
+            <h2>  <a href="#">Сливочное с шоколадной стружкой</a></h2>
           </div>
-          <a onclick="#" class="btn btn-small" href="#">Быстрый просмотр</a>
+          <a class="btn btn-small" href="#">Быстрый просмотр</a>
         </div>
       </div>
       <!--3 ряд-->
@@ -222,7 +222,7 @@
         <div class="fastview">
           <div class="item">
             <a href="#" class="item-image">
-              <img src="img/vanilla-chocolate-flakes-ice-cream.jpg.jpg" alt="Сливочно-ванильное с кусочками шоколада">
+              <img src="img/vanilla-chocolate-flakes.jpg" alt="Сливочно-ванильное с кусочками шоколада">
             </a>
             <span class="price">
             <span class="price-number">440 &#8381;</span>
@@ -230,12 +230,12 @@
             </span>
             <h2><a href="#">Сливочно-ванильное с кусочками шоколада</a></h2>
           </div>
-          <a onclick="#" class="btn btn-small" href="#">Быстрый просмотр</a>
+          <a class="btn btn-small" href="#">Быстрый просмотр</a>
         </div>
         <div class="fastview">
           <div class="item">
             <a href="#" class="item-image">
-              <img src="img/menthol-ice-cream.jpg.jpg" alt="Сливочноe с ментоловым сиропом">
+              <img src="img/menthol.jpg" alt="Сливочноe с ментоловым сиропом">
             </a>
             <span class="price">
             <span class="price-number">435 &#8381;</span>
@@ -243,12 +243,12 @@
             </span>
             <h2><a href="#">Сливочноe с ментоловым сиропом</a></h2>
           </div>
-          <a onclick="#" class="btn btn-small" href="#">Быстрый просмотр</a>
+          <a class="btn btn-small" href="#">Быстрый просмотр</a>
         </div>
         <div class="fastview">
           <div class="item">
             <a href="#" class="item-image">
-              <img src="img/black-chocolate-flakes-ice-cream.jpg.jpg" alt="Сливочное с кусочками черного шоколада">
+              <img src="img/black-chocolate-flakes.jpg" alt="Сливочное с кусочками черного шоколада">
             </a>
             <span class="price">
             <span class="price-number">355 &#8381;</span>
@@ -256,12 +256,12 @@
             </span>
             <h2><a href="#">Сливочное с кусочками черного шоколада</a></h2>
           </div>
-          <a onclick="#" class="btn btn-small" href="#">Быстрый просмотр</a>
+          <a class="btn btn-small" href="#">Быстрый просмотр</a>
         </div>
         <div class="fastview">
           <div class="item">
             <a href="#" class="item-image">
-              <img src="img/mint-ice-cream.jpg.jpg" alt="Сливочное с мятным сиропом">
+              <img src="img/mint-ice-cream.jpg" alt="Сливочное с мятным сиропом">
             </a>
             <span class="price">
             <span class="price-number">420 &#8381;</span>
@@ -269,7 +269,7 @@
             </span>
             <h2><a href="#">Сливочное с мятным сиропом</a></h2>
           </div>
-          <a onclick="#" class="btn btn-small" href="#">Быстрый просмотр</a>
+          <a class="btn btn-small" href="#">Быстрый просмотр</a>
         </div>
       </div>
     </div>
@@ -303,7 +303,6 @@
     </div>
     <div class="copyright right">
       <span>Сделано в <a href="#">HTML Academy</a> © 2017</span>
-    </div>
     </div>
   </footer>
 </body>

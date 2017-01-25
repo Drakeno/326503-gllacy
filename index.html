@@ -34,9 +34,9 @@
         </ul>
       </nav>
       <div class="user-block right">
-        <a class="search" href="#" onclick="#search_form">Поиск</a>
-        <a class="login" href="#" onclick="#enter_form">Вход</a>
-        <a class="cart" href="#" onclick="#cart_block">Пусто</a>
+        <a class="search" href="#">Поиск</a>
+        <a class="login" href="#">Вход</a>
+        <a class="cart" href="#">Пусто</a>
       </div>
     </div>
   </header>
@@ -51,29 +51,28 @@
         <a href="#" class="btn btn-large">Давайте оба!</a>
       </div>
       <div class="slide">
-        <img src="">
         <h2>Шоколадный пломбир и лимонный сорбет</h2>
         <a href="#" class="btn btn-large">Давайте оба!</a>
       </div>
       <div class="slide">
-        <img>
         <h2>Пломбир с помадкой и клубничный щербет</h2>
         <a href="#" class="btn btn-large">Давайте оба!</a>
       </div>
       <div class="slider-controls">
         <label>
-          <input type="radio" name="btn-1" checked>
+          <input type="radio" name="slide-radio" checked>
         </label>
         <label>
-          <input type="radio" name="btn-2">
+          <input type="radio" name="slide-radio">
         </label>
         <label>
-          <input type="radio" name="btn-3">
+          <input type="radio" name="slide-radio">
         </label>
       </div>
     </div>
 
-    <div class="index-content clearfix"><!-- COMMON BLOCK -->
+    <div class="index-content clearfix">
+      <!-- COMMON BLOCK -->
       <div class="offer-item left">
         <h2>Малинка даром!</h2>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -90,7 +89,7 @@
       <div class="fastview">
         <div class="item hit">
           <a href="#" class="item-image">
-            <img src="img/orange-citrus-ice-cream.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <img src="img/orange-citrus.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           </a>
           <span class="price">
           <span class="price-number">310 &#8381;</span>
@@ -102,7 +101,7 @@
       <div class="fastview">
         <div class="item hit">
           <a href="#" class="item-image">
-            <img src="img/coffee-chocolate-ice-cream.jpg" alt="Сливочно-кофейное с кусочками шоколада">
+            <img src="img/coffee-chocolate.jpg" alt="Сливочно-кофейное с кусочками шоколада">
           </a>
           <span class="price">
           <span class="price-number">380 &#8381;</span>
@@ -114,7 +113,7 @@
       <div class="fastview">
         <div class="item hit">
           <a href="#" class="item-image">
-            <img src="img/strawberry-white-chocolate-ice-cream.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <img src="img/strawberry-white-chocolate.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
           </a>
           <span class="price">
           <span class="price-number">355 &#8381;</span>
@@ -126,7 +125,7 @@
       <div class="fastview">
         <div class="item hit">
           <a href="#" class="item-image">
-            <img src="img/creme-brulee-caramel-ice-cream.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
+            <img src="img/creme-brulee-caramel.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
           </a>
           <span class="price">
           <span class="price-number">415 &#8381;</span>
@@ -149,15 +148,16 @@
       </ul>
     </div>
 
-    <div class="index-content clearfix"><!-- COMMON BLOCK -->
+    <div class="index-content clearfix">
+      <!-- COMMON BLOCK -->
       <div class="blogs left">
         <p>Новое в нашем блоге</p>
         <a href="#"><h3>10  способов сервировки фруктовых щербетов к столу</h3></a>
       </div>
       <div class="mailing right">
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
         <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
-          <input type="email" name="email" placeholder="Электронная почта">
+          <label for="email">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </label>
+          <input type="email" name="email" id="email" placeholder="Электронная почта">
           <button class="btn btn-small" type="submit">Отправить</button>
         </form>
       </div>
@@ -168,14 +168,13 @@
     <div class="adress-block">
       <p>
         Адрес главного офиса и офлайн магазина:<br>
-      <strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
+        <strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
       </p>
       <p>
         Для заказов по телефону:<br>
-      <strong>8 812 450-25-25</strong><br>
-      (с 10 до 20 ежедневно)
+        <strong>8 812 450-25-25</strong><br> (с 10 до 20 ежедневно)
       </p>
-      <a onclick="#" class="btn btn-small" href="#">Форма обратной связи</a>
+      <a class="btn btn-small" href="#">Форма обратной связи</a>
     </div>
   </div>
 
@@ -187,20 +186,15 @@
         <a class="social-btn facebook" href="#">Фейсбук</a>
         <a class="social-btn vkontakte" href="#">Вконтакте</a>
       </div>
-      <div class="container clearfix">
-        <ul>
-          <li><a href="#" class="heart-link">Для поставщиков</a></li>
-          <li><a href="#">О производстве</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">Наши документы</a></li>
-          <li><a href="#">Экологические стандарты</a></li>
-        </ul>
-      </div>
-      <div class="copyright right">
-        <div class="htmlacademy-logo"></div>
-        <span>Сделано в <a href="#">HTML Academy</a> © 2017</span>
-      </div>
+      <ul class="footer-links">
+        <li><a href="#" class="heart-link">Для поставщиков</a></li>
+        <li><a href="#">О производстве</a></li>
+        <li><a href="#">Наши документы</a></li>
+        <li><a href="#">Экологические стандарты</a></li>
+      </ul>
+    </div>
+    <div class="copyright right">
+      <span>Сделано в <a href="#">HTML Academy</a> © 2017</span>
     </div>
   </footer>
 </body>

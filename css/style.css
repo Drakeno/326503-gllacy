@@ -1,0 +1,143 @@
+body {
+  font-size: 12px;
+  line-height: 16px;
+  color: white;
+  font-weight: normal;
+  font-family: "Roboto", "Arial", sans-serif;
+  background-color: #9cb0a5;
+}
+
+h1 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.offer-item h2 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+}
+
+.slide h2 {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+.item h2 {
+  font-size: 16px;
+  line-height: 41px;
+  font-weight: bold;
+}
+
+.item img {
+  border-radius: 50%;
+}
+
+/* Проба пера с кнопками */
+
+.btn {
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+  border: none;
+}
+
+.btn:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn:active {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn-large {
+  padding: 10px 40px;
+  font-size: 32px;
+  line-height: 44px;
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  background-image: linear-gradient(90deg, #e74b36, #f26843);
+  background-image: -moz-linear-gradient(90deg, #e74b36, #f26843);
+  background-image: -webkit-linear-gradient(90deg, #e74b36, #f26843);
+  background-image: -ms-linear-gradient(90deg, #e74b36, #f26843);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+}
+
+.btn-large:hover {
+  color: #ffffff;
+  background-image: linear-gradient(90deg, #ec6f5e, #f58669);
+  background-image: -moz-linear-gradient(90deg, #ec6f5e, #f58669);
+  background-image: -webkit-linear-gradient(90deg, #ec6f5e, #f58669);
+  background-image: -ms-linear-gradient(90deg, #ec6f5e, #f58669);
+  box-shadow: 0px 1px 2px 0px rgb(172, 16, 0);
+}
+
+.btn-large:active {
+  color: #fceeec;
+  background-image: linear-gradient(90deg, #e1613e, #d74632);
+  background-image: -moz-linear-gradient(90deg, #e1613e, #d74632);
+  background-image: -webkit-linear-gradient(90deg, #e1613e, #d74632);
+  background-image: -ms-linear-gradient(90deg, #e1613e, #d74632);
+  box-shadow: inset 0px 2px 2px 0px rgb(148, 39, 24);
+}
+
+.btn-small {
+  padding: 10px 22px;
+  font-size: 18px;
+  line-height: 24px;
+  background-image: linear-gradient(90deg, #c83725, #f16743);
+  background-image: -moz-linear-gradient(90deg, #c83725, #f16743);
+  background-image: -webkit-linear-gradient(90deg, #c83725, #f16743);
+  background-image: -ms-linear-gradient(90deg, #c83725, #f16743);
+  box-shadow: 0px 2px 2px 0px rgba(85, 8, 0, 0.54);
+}
+
+.btn-small:hover {
+  color: #fefefe;
+  background-image: linear-gradient(90deg, #ec6f5e, #f58669);
+  background-image: -moz-linear-gradient(90deg, #ec6f5e, #f58669);
+  background-image: -webkit-linear-gradient(90deg, #ec6f5e, #f58669);
+  background-image: -ms-linear-gradient(90deg, #ec6f5e, #f58669);
+  box-shadow: 0px 1px 2px 0px rgb(172, 16, 0);
+}
+
+.btn-small:active {
+  color: #fceeec;
+  background-image: linear-gradient(90deg, #e1613e, #d74531);
+  background-image: -moz-linear-gradient(90deg, #e1613e, #d74531);
+  background-image: -webkit-linear-gradient(90deg, #e1613e, #d74531);
+  background-image: -ms-linear-gradient(90deg, #e1613e, #d74531);
+  box-shadow: inset 0px 2px 2px 0px rgba(90deg, #e1613e, #d74531);
+}
+
+.btn-submit {
+  text-align: center;
+  padding: 5px 48px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: solid 2px #ffffff;
+  border-radius: 30px;
+}
+
+.btn-submit:hover {
+  color: #323232;
+  background-color: rgb(255, 255, 255);
+}
+
+.btn-submit:active {
+  background-color: #ededed;
+  box-shadow: inset 0px 2px 1px 0px #696969;
+  opacity: 1;
+}
