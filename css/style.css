@@ -4,7 +4,7 @@ body {
   color: white;
   font-weight: normal;
   font-family: "Roboto", "Arial", sans-serif;
-  background-color: #9cb0a5;
+  background-color: #849d8f;
 }
 
 h1 {
@@ -117,7 +117,7 @@ h2 {
   background-image: -moz-linear-gradient(90deg, #e1613e, #d74531);
   background-image: -webkit-linear-gradient(90deg, #e1613e, #d74531);
   background-image: -ms-linear-gradient(90deg, #e1613e, #d74531);
-  box-shadow: inset 0px 2px 2px 0px rgba(90deg, #e1613e, #d74531);
+  box-shadow: inset 0px 2px 2px 0px rgb(148, 39, 24);
 }
 
 .btn-submit {
