@@ -141,6 +141,10 @@ h2 {
 
 /* Футер */
 
+footer {
+  border-top: 1px solid #a9bbb1;
+}
+
 .footer-links {
   display: inline-block;
   list-style: none;
@@ -449,6 +453,54 @@ input[type=email] {
   font-size: 45px;
   line-height: 45px;
   font-weight: bold;
+}
+
+.paginator {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.paginator li {
+  display: inline-block;
+  width: 27px;
+  text-align: center;
+}
+
+.paginator a {
+  font-size: 16px;
+  color: #fefefe;
+  text-decoration: none;
+}
+
+.paginator a:hover {
+  margin-left: -1px;
+  padding: 5px 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.current a {
+  padding: 5px 10px;
+  margin-left: -10px;
+  color: #353535;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.prev a, .next a{
+  font-size: 0;
+}
+
+.prev {
+  background: url("../img/icons/pagination-left.png") no-repeat;
+}
+
+.next {
+  background: url("../img/icons/pagination-right.png") no-repeat;
+}
+
+.disabled {
+  opacity: 0.2;
 }
 
 /* Кнопки */
