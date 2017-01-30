@@ -5,6 +5,34 @@
 
 ---
 
+
+/* Позиционирование */
+ position: absolute;
+ top, right, bottom, left
+ z-index
+
+ /* Блочная модель, размеры */
+ display
+ float
+ width, height
+ margin, padding
+
+ /* Типографика */
+ font, font-style, font-size, line-height
+ font-family, text-align
+ color
+
+ /* Оформление */
+ background, border
+ opacity
+
+ /* Анимация */
+ transition
+
+ /* Разное */
+ will-change
+}
+
 1.  **Общие технические требования**
 
  * 1.1 Стандарты вёрстки: HTML5, CSS3, прогрессивное улучшение.

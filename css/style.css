@@ -32,6 +32,13 @@ h2 {
   box-sizing: border-box;
 }
 
+.contact-number {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: bold;
+  display: block;
+}
+
 .clearfix::after {
   content: "";
   display: table;
@@ -48,13 +55,24 @@ h2 {
 
 
 /* Шапка */
+
 .main-menu {
   font-size: 16px;
   line-height: 18px;
+  font-weight: bold;
 }
 
-.main-menu a{
+.main-menu a {
+  padding: 10px 14px;
   color: #ffffff;
+  margin-right: 13px;
+}
+
+.main-menu a:hover {
+  color: #333333;
+  background: #f7f6f3;
+  text-decoration: none;
+  border-radius: 20px;
 }
 
 .main-menu ul {
@@ -70,7 +88,7 @@ h2 {
 }
 
 .user-block {
-    margin-top: 23px;
+  margin-top: 23px;
 }
 
 .user-block a {
@@ -78,6 +96,18 @@ h2 {
   line-height: 16px;
   color: #ffffff;
   text-decoration: none;
+}
+
+.search {
+  padding: 8px 18px;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.2) url("../img/icons/search.png") no-repeat 50%;
+  border-radius: 50%;
+}
+
+.search:hover {
+  color: #000000;
+  background: rgb(255, 255, 255) url("../img/icons/search-hover.png") no-repeat 50%;
 }
 
 .login {
@@ -99,10 +129,17 @@ h2 {
   border-radius: 20px;
 }
 
+.cart:hover {
+  color: #000000;
+  background: rgb(255, 255, 255) url("../img/icons/cart-full.png") left 16px top 6px no-repeat;
+}
+
+
 /* Главная */
 
 .slide {
-  width: 870px;  /* Примерно */
+  width: 870px;
+  /* Примерно */
   margin: 0 auto;
 }
 
@@ -112,9 +149,7 @@ h2 {
   padding-bottom: 40px;
 }
 
-.offer-item,
-.blogs,
-.mailing {
+.offer-item, .blogs, .mailing {
   min-width: 420px;
   width: 48.6%;
   box-sizing: border-box;
@@ -176,15 +211,18 @@ h2 {
   background: url("../img/blog-background.jpg") no-repeat 50%;
 }
 
-.blogs a {
+.blogs a, .blogs h3 {
   color: #323232;
+}
+
+.blogs a:hover, .blogs h3:hover {
+  color: #e84d37;
 }
 
 .blogs h3 {
   width: 280px;
   font-size: 24px;
   line-height: 30px;
-  color: #323232;
   margin: 20px;
 }
 
@@ -197,6 +235,7 @@ h2 {
   background: #f8f7f4;
   border: 5px solid;
   border-image: url("../img/mailing-pattern.png") 5 repeat;
+  /* Это не работает, надо переделать в градиент*/
 }
 
 .mailing label {
@@ -210,12 +249,12 @@ h2 {
 }
 
 input[type=email] {
-    height: 42px;
-    min-width: 230px;
-    margin-bottom: 12px;
-    margin-left: 20px;
-    border: 2px solid #d3d3d2;
-    border-radius: 5px;
+  height: 42px;
+  min-width: 230px;
+  margin-bottom: 12px;
+  margin-left: 20px;
+  border: 2px solid #d3d3d2;
+  border-radius: 5px;
 }
 
 .feedback {
@@ -244,19 +283,20 @@ input[type=email] {
 }
 
 .sort-choose {
-  width: 180px;/* Временно */
+  width: 180px;
+  /* Временно */
 }
 
 .price-choose {
-  width: 220px;/* Временно */
+  width: 220px;
+  /* Временно */
 }
 
-.fatness-choose span,
-.filler span {
+.fatness-choose span, .filler span {
   display: block;
 }
 
-.filler + .btn-submit {
+.filler+.btn-submit {
   margin-left: 14px;
 }
 
@@ -276,7 +316,8 @@ input[type=email] {
 
 .item {
   min-width: 200px;
-  width: 23.3%;/* Хотя должно быть 22.2% Почему????*/
+  width: 23.3%;
+  /* Хотя должно быть 22.2% Почему????*/
   margin-right: 2.2%;
   float: left;
 }
@@ -287,8 +328,7 @@ input[type=email] {
   height: auto;
 }
 
-.item h2,
-.item h3 {
+.item h2, .item h3 {
   font-size: 16px;
   line-height: 22px;
   font-weight: bold;
@@ -297,6 +337,10 @@ input[type=email] {
 
 .item a {
   color: #ffffff;
+}
+
+.item a:hover {
+  color: #ffbc9e;
 }
 
 .item img {
@@ -316,7 +360,8 @@ input[type=email] {
   font-weight: bold;
 }
 
-/* Проба пера с кнопками */
+
+/* Кнопки */
 
 .btn {
   color: #ffffff;
@@ -362,19 +407,19 @@ input[type=email] {
   padding: 10px 22px;
   font-size: 18px;
   line-height: 24px;
-  background-image: linear-gradient(90deg, #c83725, #f16743);
+  background-image: linear-gradient(180deg, #c83725, #f16743);
   box-shadow: 0px 2px 2px 0px rgba(85, 8, 0, 0.54);
 }
 
 .btn-small:hover {
   color: #fefefe;
-  background-image: linear-gradient(90deg, #ec6f5e, #f58669);
+  background-image: linear-gradient(180deg, #ec6f5e, #f58669);
   box-shadow: 0px 1px 2px 0px rgb(172, 16, 0);
 }
 
 .btn-small:active {
   color: #fceeec;
-  background-image: linear-gradient(90deg, #e1613e, #d74531);
+  background-image: linear-gradient(180deg, #e1613e, #d74531);
   box-shadow: inset 0px 2px 2px 0px rgb(148, 39, 24);
 }
 
