@@ -1,9 +1,10 @@
 body {
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: white;
   font-weight: normal;
-  font-family: "Roboto", "Arial", sans-serif;
+  background-color: #849d8f;
 }
 
 h1 {
@@ -27,8 +28,7 @@ h2 {
   min-width: 900px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2.2%;
-  background-color: #849d8f; /* Чисто декоративно */
+  padding: 0 2.3%;
   box-sizing: border-box;
 }
 
@@ -47,8 +47,6 @@ h2 {
 }
 
 
-/* Помнить, что отступы в середке и по краям по 2.2% */
-
 /* Шапка */
 .main-menu {
   font-size: 16px;
@@ -63,11 +61,11 @@ h2 {
   list-style: none;
 }
 
-.main-menu ul li {
+.main-menu li {
   display: inline-block;
 }
 
-.main-menu ul li ul {
+.sub-menu {
   display: none;
 }
 
@@ -83,22 +81,21 @@ h2 {
 }
 
 .login {
-  background: rgba(255, 255, 255, 0.2) url("../img/icons/login.png") left 16px top 6px no-repeat;
   padding: 8px 16px;
   padding-left: 45px;
+  background: rgba(255, 255, 255, 0.2) url("../img/icons/login.png") left 16px top 6px no-repeat;
   border-radius: 20px;
 }
 
 .login:hover {
-  background: rgb(255, 255, 255) url("../img/icons/login-hover.png") left 16px top 6px no-repeat;
   color: #000000;
-  filter: grayscale(90%);
+  background: rgb(255, 255, 255) url("../img/icons/login-hover.png") left 16px top 6px no-repeat;
 }
 
 .cart {
-  background: rgba(255, 255, 255, 0.2) url("../img/icons/cart.png") left 16px top 6px no-repeat;
   padding: 8px 34px;
   padding-left: 45px;
+  background: rgba(255, 255, 255, 0.2) url("../img/icons/cart.png") left 16px top 6px no-repeat;
   border-radius: 20px;
 }
 
@@ -110,18 +107,19 @@ h2 {
 }
 
 .index-content {
-  padding-bottom: 40px;
   min-width: 900px;
   max-width: 1200px;
+  padding-bottom: 40px;
 }
 
-.offer-item, .blogs, .mailing {
+.offer-item,
+.blogs,
+.mailing {
   min-width: 420px;
-  min-height: 220px;
-  width: 49%;
+  width: 48.6%;
+  box-sizing: border-box;
   border-radius: 20px;
   background: #000000;
-  box-sizing: border-box;
 }
 
 .offer-item {
@@ -144,7 +142,10 @@ h2 {
 }
 
 .offer-item .btn {
-  position: absolute;
+  display: inline-block;
+  float: right;
+  margin-right: 21px;
+  margin-bottom: 24px;
 }
 
 .offer-item.left {
@@ -156,12 +157,12 @@ h2 {
 }
 
 .index-seo-content {
-  background: url("../img/seo-content-background.jpg") no-repeat 50%;
+  margin-bottom: 44px;
   font-size: 16px;
   line-height: 22px;
   color: #323232;
+  background: url("../img/seo-content-background.jpg") no-repeat 50%;
   border-radius: 20px;
-  margin-bottom: 44px;
 }
 
 .index-seo-content h2 {
@@ -180,10 +181,15 @@ h2 {
 }
 
 .blogs h3 {
+  width: 280px;
   font-size: 24px;
   line-height: 30px;
   color: #323232;
-  width: 280px;
+  margin: 20px;
+}
+
+.blogs p {
+  margin: 20px;
 }
 
 .mailing {
@@ -194,22 +200,22 @@ h2 {
 }
 
 .mailing label {
+  display: block;
   font-size: 16px;
   line-height: 22px;
-  display: block;
 }
 
 .mailing-form label {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 
 input[type=email] {
     height: 42px;
     min-width: 230px;
+    margin-bottom: 12px;
+    margin-left: 20px;
     border: 2px solid #d3d3d2;
     border-radius: 5px;
-    margin-bottom: 12px;
 }
 
 .feedback {
@@ -218,16 +224,20 @@ input[type=email] {
 }
 
 .adress-block {
-  color: #323232;
   float: right;
   margin: 20px;
+  padding: 20px;
+  color: #323232;
   border-radius: 20px;
   background: #fefefe;
-  padding: 20px;
 }
 
 
 /* Каталог */
+
+.breadcrumb li {
+  display: inline-block;
+}
 
 .hit {
   background: url("../img/icons/top-item.png") no-repeat;
@@ -241,7 +251,8 @@ input[type=email] {
   width: 220px;/* Временно */
 }
 
-.fatness-choose span, .filler span {
+.fatness-choose span,
+.filler span {
   display: block;
 }
 
@@ -254,28 +265,30 @@ input[type=email] {
 }
 
 .filters {
+  margin-bottom: 40px;
   font-size: 14px;
   line-height: 16px;
-  margin-bottom: 40px;
 }
 
-.items .fastview:last-child {
+.fastview:last-child .item {
   margin-right: 0;
 }
 
-.fastview {
-  width: 250px;
+.item {
+  min-width: 200px;
+  width: 23.3%;/* Хотя должно быть 22.2% Почему????*/
   margin-right: 2.2%;
   float: left;
-/*  border: 1px solid #fff;   для наглядности */
 }
 
 .item img {
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  max-width: 267px;
+  height: auto;
 }
 
-.item h2, .item h3 {
+.item h2,
+.item h3 {
   font-size: 16px;
   line-height: 22px;
   font-weight: bold;
@@ -366,11 +379,11 @@ input[type=email] {
 }
 
 .btn-submit {
-  text-align: center;
   padding: 5px 48px;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+  text-align: center;
   background-color: rgba(255, 255, 255, 0.2);
   border: solid 2px #ffffff;
   border-radius: 30px;
