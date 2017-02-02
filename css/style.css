@@ -1,8 +1,7 @@
 body {
-  font-family: "Roboto", "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
-  color: white;
+  color: #ffffff;
   font-weight: normal;
   background-color: #849d8f;
 }
@@ -435,22 +434,31 @@ input[type=email] {
   margin-left: 14px;
 }
 
-.fastview .btn {
-  display: none;
-  background: rgba(255, 255, 255, 0.2);
-}
-
 .filters {
   margin-bottom: 40px;
   font-size: 14px;
   line-height: 16px;
 }
 
+.fastview {
+  position: relative;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.fastview:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
 .fastview:last-child .item {
   margin-right: 0;
 }
 
+.fastview .btn {
+  display: none;
+}
+
 .item {
+  position: relative;
   width: 267px;
   margin-right: 26px;
   float: left;
