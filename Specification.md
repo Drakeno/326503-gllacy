@@ -10,6 +10,9 @@
   padding-left: 22px;
 } меня не выпорят, то нет тогда проблемы
 
+-Для fastview:
+https://jsfiddle.net/rogatnev_nikita/v3faqvfy/
+
 /* Позиционирование */
  position: absolute;
  top, right, bottom, left
