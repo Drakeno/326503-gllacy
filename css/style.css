@@ -1,4 +1,5 @@
 body {
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: #ffffff;
@@ -155,6 +156,7 @@ footer {
   padding: 16px 16px;
   margin-right: 11px;
   border: 3px solid rgba(255, 255, 255, 0.5);
+  background: url("../img/icon-sprite.png") no-repeat;
   border-radius: 50%;
   opacity: 0.8;
 }
@@ -166,19 +168,19 @@ footer {
 .social-btn:active {}
 
 .twitter {
-  background: url("../img/icons/twitter.png") no-repeat;
+  background-position: -63px -64px;
 }
 
 .instagram {
-  background: url("../img/icons/instagram.png") no-repeat;
+  background-position: -105px -64px;
 }
 
 .facebook {
-  background: url("../img/icons/facebook.png") no-repeat;
+  background-position: -147px -64px;
 }
 
 .vkontakte {
-  background: url("../img/icons/vkontakte.png") no-repeat;
+  background-position: -63px -106px;
 }
 
 .footer-links {
@@ -210,7 +212,7 @@ footer {
 
 .heart-link {
   font-weight: bold;
-  background: url("../img/icons/heart.png") top 5px left 0px no-repeat;
+  background: url("../img/icons/heart.png") top 2px left 0px no-repeat;
 }
 
 .copyright {
@@ -318,15 +320,25 @@ footer {
   margin-bottom: 24px;
 }
 
-.icon-ice-cream {
-  background: url("../img/icons/ice-cream.png") no-repeat;
+.icon {
+  position: relative;
+}
+
+.ice-cream::before {
+  background: url("../img/icon-sprite.png") no-repeat;
+  background-position: -5px -5px;
+  width: 15px;
+  height: 13px;
+  position: absolute;
+  right: 5px;
+  top: 10px;
 }
 
 .icon-leaflet {
   background: url("../img/icons/leaflet.png") no-repeat;
 }
 
-.icon-cow {
+.cow {
   background: url("../img/icons/cow.png") no-repeat;
 }
 
@@ -554,6 +566,7 @@ input[type=email] {
   text-decoration: none;
   border-radius: 50px;
   border: none;
+  cursor: pointer;
 }
 
 .btn:hover {
