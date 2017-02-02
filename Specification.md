@@ -5,34 +5,6 @@
 
 ---
 
-Баги:
--Либо есть для сердечка место, либо отступ,  если за конструкцию .footer-links li:nth-child(2n+1) a {
-  padding-left: 22px;
-} меня не выпорят, то нет тогда проблемы
-
--Для fastview:
-https://jsfiddle.net/rogatnev_nikita/v3faqvfy/
-
-/* Позиционирование */
- position: absolute;
- top, right, bottom, left
- z-index
-
- /* Блочная модель, размеры */
- display
- float
- width, height
- margin, padding
-
- /* Типографика */
- font, font-style, font-size, line-height
- font-family, text-align
- color
-
- /* Оформление */
- background, border
- opacity
-
 1.  **Общие технические требования**
 
  * 1.1 Стандарты вёрстки: HTML5, CSS3, прогрессивное улучшение.

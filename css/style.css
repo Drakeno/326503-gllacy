@@ -59,35 +59,94 @@ h2 {
 
 /* Шапка */
 
+.wrapper {
+  padding-top: 9px;
+}
+
 .main-menu {
+  font-weight: bold;
+  margin-top: 14px;
   font-size: 16px;
   line-height: 18px;
-  font-weight: bold;
+  list-style: none;
 }
 
 .main-menu a {
-  padding: 10px 14px;
+  display: block;
+  padding: 6px 13px;
   color: #ffffff;
-  margin-right: 13px;
 }
 
-.main-menu a:hover {
+.main-menu a:hover,
+.main-menu li:hover a {
   color: #333333;
   background: #f7f6f3;
   text-decoration: none;
   border-radius: 20px;
 }
 
-.main-menu ul {
-  list-style: none;
+.main-menu a:active {
+  color: #333333;
+  background: #f7f6f3;
+  text-decoration: none;
+  border-radius: 20px;
+  box-shadow: inset 0 2px 1px 0px #696969;
 }
 
-.main-menu li {
+.main-menu > li {
+  position: relative;
+  margin-right: -3px;
   display: inline-block;
 }
 
-.sub-menu {
+.main-menu .sub-menu {
+  position: absolute;
+  left: -7px;
+  margin: 0;
+  padding-bottom: 7px;
+  padding-top: 3px;
+  padding-left: 0px;
+  list-style: none;
+  background: #f8f7f4;
+  border-radius: 5px;
+  width: 143px;
+  font-weight: normal;
   display: none;
+  box-shadow: 0px 20px 20px 5px rgba(0, 0, 0, 0.4);
+}
+
+li:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu li {
+  padding-top: 1px;
+}
+
+.sub-menu a {
+  font-size: 14px;
+  line-height: 16px;
+  padding-top: 7px;
+  padding-left: 20px;
+  display: block;
+  color: #323232;
+  text-decoration: none;
+}
+
+.sub-menu li > a:hover {
+  background: #fbded7;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.sub-menu li > a:active {
+  background: #f6b5a5;
+}
+
+.hot-offer {
+  font-weight: bold;
+  border-bottom: solid 1px #d1d0ce;
+  margin-bottom: -1px;
 }
 
 .user-block {
