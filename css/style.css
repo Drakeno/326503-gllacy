@@ -139,6 +139,7 @@ h2 {
   background: rgb(255, 255, 255) url("../img/icons/cart-full.png") left 16px top 6px no-repeat;
 }
 
+
 /* Футер */
 
 footer {
@@ -163,9 +164,7 @@ footer {
   opacity: 1;
 }
 
-.social-btn:active {
-
-}
+.social-btn:active {}
 
 .twitter {
   background: url("../img/icons/twitter.png") no-repeat;
@@ -191,9 +190,9 @@ footer {
 }
 
 .footer-links li {
-   width:50%;
-   float: left;
-   list-style: none;
+  width: 50%;
+  float: left;
+  list-style: none;
 }
 
 .footer-links li a {
@@ -202,8 +201,7 @@ footer {
   line-height: 18px;
 }
 
-.footer-links li a:hover,
-.footer-links li a:active {
+.footer-links li a:hover, .footer-links li a:active {
   color: #ffbc9e;
 }
 
@@ -227,10 +225,10 @@ footer {
   color: #fefefe;
 }
 
-.copyright a:hover,
-.copyright a:active {
+.copyright a:hover, .copyright a:active {
   color: #ffbc9e;
 }
+
 
 /* Главная */
 
@@ -522,7 +520,7 @@ input[type=email] {
   border-radius: 50%;
 }
 
-.prev a, .next a{
+.prev a, .next a {
   font-size: 0;
 }
 
@@ -537,6 +535,7 @@ input[type=email] {
 .disabled {
   opacity: 0.2;
 }
+
 
 /* Кнопки */
 
