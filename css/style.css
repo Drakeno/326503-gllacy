@@ -290,7 +290,7 @@ footer {
 }
 
 .footer-links {
-  width: 330px;
+  width: 300px;
   margin-left: 150px;
   padding-left: 20px;
   padding-top: 10px;
@@ -299,6 +299,7 @@ footer {
 .footer-links li {
   width: 50%;
   float: left;
+  margin-right: -5px;
   list-style: none;
 }
 
@@ -306,19 +307,30 @@ footer {
   color: #ffffff;
   font-size: 13px;
   line-height: 18px;
+  padding-left: 21px;
+  padding-right: -6px;
+  margin-right: -35px;
 }
 
 .footer-links li a:hover, .footer-links li a:active {
   color: #ffbc9e;
 }
 
-.footer-links li:nth-child(2n+1) a {
-  padding-left: 22px;
+.heart-link {
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
 }
 
-.heart-link {
-  font-weight: bold;
-  background: url("../img/icons/heart.png") top 2px left 0px no-repeat;
+.heart-link:before {
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    content: "";
+    width: 15px;
+    height: 13px;
+    background: url("../img/icon-sprite.png") no-repeat;
+    background-position: -181px -35px;
 }
 
 .copyright {
