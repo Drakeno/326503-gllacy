@@ -151,7 +151,7 @@ li:hover .sub-menu {
 }
 
 .user-block {
-  margin-top: 22px;
+  margin-top: 14px;
 }
 
 .user-block a {
@@ -175,9 +175,11 @@ li:hover .sub-menu {
 }
 
 .login {
+  position: relative;
+  display: inline-block;
   padding: 8px 16px;
   padding-left: 45px;
-  padding-top: 7px;
+  padding-top: 8px;
   margin-right: 7px;
   font-size: 14px;
   line-height: 16px;
@@ -185,34 +187,61 @@ li:hover .sub-menu {
   background: rgba(255, 255, 255, 0.2);
 }
 
+.login:hover {
+  background-color: #242424;
+}
+
 .login::before {
+  position: absolute;
+  top: 6px;
+  left: 15px;
+  content: "";
   width: 21px;
   height: 19px;
-  background: #000;
-  /*background-position: -135px -136px;*/
+  background: url("../img/icon-sprite.png") no-repeat;
+  background-position: -135px -136px;
 }
 
 .login:hover {
   color: #000000;
-  background: rgb(255, 255, 255) url("../img/icons/login-hover.png") no-repeat;
+  background: rgb(255, 255, 255);
+}
+
+.login:hover::before {
   background-position: -166px -136px;
 }
 
 .cart {
+  position: relative;
+  display: inline-block;
   padding: 8px 34px;
   padding-left: 45px;
-  padding-top: 7px;
+  padding-top: 8px;
   font-size: 14px;
   line-height: 16px;
-  background: rgba(255, 255, 255, 0.2) url("../img/icons/cart.png") left 17px top 6px no-repeat;
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
+}
+
+.cart::before {
+  position: absolute;
+  top: 6px;
+  left: 17px;
+  content: "";
+  width: 21px;
+  height: 20px;
+  background: url("../img/icon-sprite.png") no-repeat;
+  background-position: -181px -5px;
 }
 
 .cart:hover {
   color: #000000;
-  background: rgb(255, 255, 255) url("../img/icons/cart-full.png") left 16px top 6px no-repeat;
+  background: rgb(255, 255, 255);
 }
 
+.cart:hover::before {
+  background-position: -105px -106px;
+}
 
 /* Футер */
 
