@@ -58,47 +58,42 @@
           <div class="sort-choose left">
             <label for="sort">Сортировка:</label>
             <select name="sort" id="sort">
-              <option value="popularity">По популярности</option>
+              <option value="popularity">по популярности</option>
             </select>
           </div>
           <div class="price-choose left">
-            <label for="price">Цена: 100 руб. – 500 руб.</label>
             <input name="price" id="price" type="range" min="100" max="500">
+            <label for="price">Цена: 100 руб. – 500 руб.</label>
           </div>
           <div class="fatness-choose left">
             <span>Жирность:</span>
-            <label>
-              <input type="radio" value="zero" name="fatness"> 0%
-            </label>
-            <label>
-              <input type="radio" value="light" name="fatness" checked> до 10%
-            </label>
-            <label>
-              <input type="radio" value="medium" name="fatness"> до 30%
-            </label>
-            <label>
-              <input type="radio" value="large" name="fatness"> выше 30%
-            </label>
+            <div class="filters-bg fatness">
+              <input id="zero" type="radio" value="zero" name="fatness">
+              <label for="zero">0%</label>
+              <input id="light" type="radio" value="light" name="fatness" checked>
+              <label ащк="light">до 10%</label>
+              <input id="medium" type="radio" value="medium" name="fatness">
+              <label for="medium">до 30%</label>
+              <input id="large" type="radio" value="large" name="fatness">
+              <label for="large">выше 30%</label>
+            </div>
           </div>
         </div>
         <div class="choose-line clearfix">
           <div class="filler left">
             <span>Наполнители:</span>
-            <label>
-              <input type="checkbox" value="chocolate" name="filling" checked> Шоколадные
-            </label>
-            <label>
-              <input type="checkbox" value="sugar powder" name="filling" checked> сахарные присыпки
-            </label>
-            <label>
-              <input type="checkbox" value="fruit" name="filling"> фрукты
-            </label>
-            <label>
-              <input type="checkbox" value="syrup" name="filling"> сиропы
-            </label>
-            <label>
-              <input type="checkbox" value="jam" name="filling"> джемы
-            </label>
+            <div class="filters-bg">
+              <input id="chocolate" type="checkbox" value="chocolate" name="filling" checked>
+              <label for="chocolate">шоколадные</label>
+              <input id="sugar-powder" type="checkbox" value="sugar-powder" name="filling" checked>
+              <label for="sugar-powder">сахарные присыпки</label>
+              <input id="fruit" type="checkbox" value="fruit" name="filling">
+              <label for="fruit">фрукты</label>
+              <input id="syrup" type="checkbox" value="syrup" name="filling">
+              <label for="syrup">сиропы</label>
+              <input id="jam" type="checkbox" value="jam" name="filling">
+              <label for="jam">джемы</label>
+            </div>
           </div>
           <input class="btn-submit" type="submit" value="Применить">
         </div>
@@ -293,8 +288,8 @@
     </div>
     <ul class="footer-links left">
       <li><a href="#" class="heart-link">Для поставщиков</a></li>
-      <li><a href="#">О производстве</a></li>
       <li><a href="#">Наши документы</a></li>
+      <li><a href="#">О производстве</a></li>
       <li><a href="#">Экологические стандарты</a></li>
     </ul>
 
