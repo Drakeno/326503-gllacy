@@ -663,8 +663,19 @@ footer {
   line-height: 16px;
 }
 
-.item:last-child {
-  margin-right: 0;
+.items1 {
+  position: relative;
+  z-index: 10;
+}
+
+.items2 {
+  position: relative;
+  z-index: 9;
+}
+
+.items3 {
+  position: relative;
+  z-index: 8;
 }
 
 .item {
@@ -672,6 +683,10 @@ footer {
   width: 267px;
   margin-right: 26px;
   float: left;
+}
+
+.item:last-child {
+  margin-right: 0;
 }
 
 .item h2, .item h3 {
