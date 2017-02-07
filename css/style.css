@@ -501,20 +501,22 @@ footer {
 
 .mailing {
   color: #5a5a5a;
-  background: repeating-linear-gradient(
-  -45deg,
-  #ffffff 1px,
+  background: #ffffff url("../img/mailing-pattern.png") 27px repeat;
+  /* Градиент... неее */
+  /*background: repeating-linear-gradient(
+  -42deg,
+  #ffffff,
   #ffffff 7px,
   #92cdff 8px,
   #92cdff 14px,
   #ffffff 15px,
-  #ffffff 21px,
-  #fe9e90 22px,
-  #fe9e90 28px,
-  #ffffff 29px
+  #ffffff 22px,
+  #fe9e90 23px,
+  #fe9e90 29px,
+  #ffffff 30px
 );
-/* красный #fe9e90 сний #92cdff белый #ffffff */
 
+красный #fe9e90 сний #92cdff белый #ffffff */
 }
 
 .mailing label {
