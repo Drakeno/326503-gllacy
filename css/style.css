@@ -502,16 +502,16 @@ footer {
 .mailing {
   color: #5a5a5a;
   background: repeating-linear-gradient(
-  135deg,
-  #ffffff,
-  #ffffff 6px,
-  #92cdff 7px,
-  #92cdff 13px,
-  #ffffff 14px,
-  #ffffff 20px,
-  #fe9e90 21px,
-  #fe9e90 27px,
-  #ffffff 28px
+  -45deg,
+  #ffffff 1px,
+  #ffffff 7px,
+  #92cdff 8px,
+  #92cdff 14px,
+  #ffffff 15px,
+  #ffffff 21px,
+  #fe9e90 22px,
+  #fe9e90 28px,
+  #ffffff 29px
 );
 /* красный #fe9e90 сний #92cdff белый #ffffff */
 
@@ -526,7 +526,7 @@ footer {
 .mailing-form {
   background: #ffffff;
   border-radius: 10px;
-  margin: 5px 6px;
+  margin: 5px 5px;
 }
 
 .mailing-form label {
