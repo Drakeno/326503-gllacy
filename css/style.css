@@ -501,10 +501,20 @@ footer {
 
 .mailing {
   color: #5a5a5a;
-  background: #f8f7f4;
-  border: 6px solid;
-  border-image: url("../img/mailing-pattern.png") 5 repeat;
-  /* Это не работает, надо переделать в градиент*/
+  background: repeating-linear-gradient(
+  135deg,
+  #ffffff,
+  #ffffff 6px,
+  #92cdff 7px,
+  #92cdff 13px,
+  #ffffff 14px,
+  #ffffff 20px,
+  #fe9e90 21px,
+  #fe9e90 27px,
+  #ffffff 28px
+);
+/* красный #fe9e90 сний #92cdff белый #ffffff */
+
 }
 
 .mailing label {
@@ -513,11 +523,17 @@ footer {
   line-height: 22px;
 }
 
+.mailing-form {
+  background: #ffffff;
+  border-radius: 10px;
+  margin: 5px 6px;
+}
+
 .mailing-form label {
+  padding-top: 30px;
   margin-left: 21px;
   margin-right: 25px;
-  margin-top: 29px;
-  margin-bottom: 34px;
+  margin-bottom: 35px;
 }
 
 .mailing-form input {
@@ -541,6 +557,7 @@ footer {
 }
 
 .mailing-form input:focus {
+  padding: 8px 13px;
   border: 2px solid rgba(46, 136, 228, 0.52);
 }
 
@@ -618,16 +635,11 @@ footer {
   background: url("../img/icon-sprite.png") no-repeat;
   background-position: -245px -5px;
   content: "";
-}
-
-.sort-choose {
-  width: 180px;
-  /* Временно */
+  z-index: 5;
 }
 
 .price-choose {
   width: 220px;
-  /* Временно */
 }
 
 .fatness-choose span, .filler span {
@@ -648,34 +660,6 @@ footer {
   margin-right: 0;
 }
 
-.fastview {
-  display: none;
-}
-
-.item:hover .fastview {
-  top: -6px;
-  left: -13px;
-  padding-top: 347px;
-  padding-bottom: 31px;
-  width: 293px;
-  position: absolute;
-  display: block;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 5px;
-  box-shadow: 0px 20px 20px 5px rgba(0, 0, 0, 0.12);
-  z-index: 100;
-}
-
-.fastview .btn {
-  margin-left: 45px;
-  padding: 10px 17px;
-}
-
-.fastview .btn:hover {
-  color: #ffffff;
-}
-
-
 .item {
   position: relative;
   width: 267px;
@@ -684,11 +668,13 @@ footer {
 }
 
 .item h2, .item h3 {
+  position: relative;
   margin-top: 8px;
   font-size: 16px;
   line-height: 22px;
   font-weight: bold;
   text-align: center;
+  z-index: 3;
 }
 
 .item a {
@@ -700,7 +686,9 @@ footer {
 }
 
 .item img {
+  position: relative;
   border-radius: 50%;
+  z-index: 2;
 }
 
 .price {
@@ -708,6 +696,7 @@ footer {
   margin-top: -60px;
   font-size: 30px;
   line-height: 45px;
+  z-index: 3;
 }
 
 .price-number {
@@ -716,6 +705,46 @@ footer {
   font-weight: bold;
 }
 
+.fastview {
+  display: none;
+}
+
+.item:hover .fastview {
+  top: -6px;
+  left: -13px;
+  padding-top: 372px;
+  padding-bottom: 31px;
+  width: 293px;
+  position: absolute;
+  display: block;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 5px rgba(0, 0, 0, 0.12);
+  z-index: 1;
+}
+
+.hidden-button {
+  display: none;
+}
+
+.item:hover .hidden-button {
+  position: absolute;
+  left: 32px;
+  bottom: -27px;
+  display: block;
+  z-index: 5;
+  color: #ffffff;
+}
+
+.hidden-button .btn {
+  padding: 11px 17px;
+}
+
+.hidden-button .btn:hover {
+  color: #ffffff;
+}
+
+/* Переключатель страниц */
 .paginator {
     width: 190px;
     padding: 10px;
@@ -774,11 +803,21 @@ footer {
 
 /* Чекбоксы и фильтры */
 
-label + select {
+.sort-choose {
+  position: relative;
+  width: 193px;
+}
+
+.sort-choose label {
+  margin-left: 16px;
+}
+
+select[name="sort"] {
+  position: relative;
   padding-top: 9px;
   padding-bottom: 8px;
-  padding-left: 12px;
-  padding-right: 20px;
+  padding-left: 16px;
+  padding-right: 50px;
   margin: 6px 0px;
   font-size: 16px;
   line-height: 18px;
@@ -786,11 +825,32 @@ label + select {
   border-radius: 30px;
   border: none;
   background-color: rgba(255, 255, 255, 0.2);
+  /* Убираем стрелочку*/
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
 }
 
-label + select:hover {
+.sort-choose label::before {
+  position: absolute;
+  z-index: 20;
+  top: 38px;
+  right: 10px;
+  height: 9px;
+  width: 15px;
+  content: "";
+  background: url("../img/icon-sprite.png") no-repeat;
+  background-position: -251px -73px;
+}
+
+.sort-choose:hover select[name="sort"] {
   background-color: rgb(255, 255, 255);
   color: #323232;
+}
+
+.sort-choose:hover label::before {
+  background-position: -237px -73px;
 }
 
 .first-choose-line {
@@ -846,7 +906,7 @@ input[type="range"] + label {
   position: relative;
   width: 188px;
   margin-right: 10px;
-  margin-left: 25px;
+  margin-left: 31px;
 }
 
 input[type="range"] + label::after {
