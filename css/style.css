@@ -140,7 +140,7 @@ li:hover .sub-menu {
   display: block;
 }
 
-li:hover .sub-menu>.active a {
+li:hover .sub-menu > .active a {
   color: #ffffff;
   background: #d07058;
   border-radius: 0;
@@ -181,6 +181,7 @@ li:hover .sub-menu>.active a {
 }
 
 .user-block {
+  position: relative;
   margin-top: 14px;
 }
 
@@ -191,6 +192,7 @@ li:hover .sub-menu>.active a {
 }
 
 .search {
+  position: relative;
   padding: 9px 17px;
   margin-right: 10px;
   background: rgba(255, 255, 255, 0.2) url("../img/icon-sprite.png") no-repeat;
@@ -202,6 +204,46 @@ li:hover .sub-menu>.active a {
   color: #000000;
   background: rgb(255, 255, 255) url("../img/icon-sprite.png") no-repeat;
   background-position: -199px -59px;
+}
+
+.search-window {
+  position: absolute;
+  top: 36px;
+  right: 253px;
+  width: 341px;
+  height: 84px;
+  border-radius: 6px;
+  background-color: rgb(248, 247, 244);
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.search-form input {
+  font-size: 14px;
+  line-height: 24px;
+  width: 309px;
+  box-sizing: border-box;
+  margin: 20px 15px;
+  border-radius: 10px;
+}
+
+.search-form label {
+	font-size: 0;
+	line-height: 24px;
+	padding-left: 13px;
+	color: #8fbdec;
+  float: left;
+}
+
+.search-form input:focus + label {
+  position: absolute;
+  left: 15px;
+  top: 5px;
+  font: inherit;
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: normal;
+	display: block;
+  color: #5b9ddf;
 }
 
 .login {
@@ -273,6 +315,23 @@ li:hover .sub-menu>.active a {
   background-position: -105px -106px;
 }
 
+.cart:hover .cart-window {
+  display: block;
+}
+
+.cart-window {
+  position: absolute;
+  width: 540px;
+  height: 242px;
+  top: 36px;
+  right: 0px;
+  padding-top: 20px;
+  color: #323232;
+  display: none;
+  background-color: rgb(248, 247, 244);
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
 
 /* Слайдер */
 
@@ -532,46 +591,56 @@ input[name="slide-radio"] {
 красный #fe9e90 сний #92cdff белый #ffffff */
 }
 
-.mailing label {
-  display: block;
-  font-size: 16px;
-  line-height: 22px;
-}
-
 .mailing-form {
+  position: relative;
   background: #ffffff;
   border-radius: 10px;
   margin: 5px 5px;
 }
 
-.mailing-form label {
+.mailing-form p {
+  display: block;
+  font-size: 16px;
+  line-height: 22px;
   padding-top: 30px;
+  margin-top: 5px;
   margin-left: 21px;
   margin-right: 25px;
   margin-bottom: 35px;
 }
 
 .mailing-form input {
-  font: inherit;
   color: #999999;
   width: 336px;
   font-size: 16px;
   line-height: 24px;
-  padding: 9px 14px;
   margin-bottom: 34px;
   margin-left: 20px;
   margin-right: 9px;
-  border: 1px solid rgba(178, 178, 178, 0.52);
-  border-radius: 5px;
   box-sizing: border-box;
 }
 
-.mailing-form input:hover {
+/* Наведение на все input и эффект label*/
+
+.mailing-form input,
+.search-form input {
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #999999;
+  padding: 9px 14px;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 5px;
+}
+
+.mailing-form input:hover,
+.search-form input:hover {
   padding: 8px 13px;
   border: 2px solid rgba(154, 154, 154, 0.52);
 }
 
-.mailing-form input:focus {
+.mailing-form input:focus,
+.search-form input:focus {
+  color: #323232;
+  font-weight: bold;
   padding: 8px 13px;
   border: 2px solid rgba(46, 136, 228, 0.52);
   outline: 0;

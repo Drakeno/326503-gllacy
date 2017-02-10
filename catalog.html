@@ -36,8 +36,21 @@
     </nav>
     <div class="user-block right">
       <a class="search" href="#"></a>
+      <div class="search-window">
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <input type="search" name="search" id="search" value="Что ищем?" onfocus="if (this.value == 'Что ищем?') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Что ищем?';}">
+          <label for="search">Что ищем?</label>
+        </form>
+      </div>
       <a class="login" href="#">Вход</a>
-      <a class="cart" href="#">Пусто</a>
+      <a class="cart" href="#">2 товара
+      <div class="cart-window">
+        <table>
+          <tr><td>x</td><td>img</td><td>Пломбир с апельсиновым джемом</td><td>1,5 кг х 200 руб.</td><td>300 руб.</td></tr>
+          <tr><td>x</td><td>img</td><td>Клубничный пломбир с присыпкой  из белого шоколада</td><td>1,5 кг х 300 руб.</td><td>450 руб.</td></tr>
+        </table>
+      </div>
+      </a>
     </div>
   </header>
 
