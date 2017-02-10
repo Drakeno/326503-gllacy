@@ -166,8 +166,8 @@
         <div class="mailing right">
           <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <input type="email" name="email" id="email" placeholder="Электронная почта">
-            <label for="email"></label>
+            <input type="email" name="email" id="email" value="Электронная почта" onfocus="if (this.value == 'Электронная почта') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Электронная почта';}">
+            <label for="email">Электронная почта</label>
             <button class="btn btn-small" type="submit">Отправить</button>
           </form>
         </div>

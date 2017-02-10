@@ -226,24 +226,10 @@ li:hover .sub-menu > .active a {
   border-radius: 10px;
 }
 
-.search-form label {
-	font-size: 0;
-	line-height: 24px;
-	padding-left: 13px;
-	color: #8fbdec;
-  float: left;
-}
-
 .search-form input:focus + label {
-  position: absolute;
+  padding-left: 13px;
   left: 15px;
   top: 5px;
-  font: inherit;
-  font-size: 11px;
-  line-height: 13px;
-  font-weight: normal;
-	display: block;
-  color: #5b9ddf;
 }
 
 .login {
@@ -620,6 +606,20 @@ input[name="slide-radio"] {
   box-sizing: border-box;
 }
 
+.search-form label,
+.mailing-form label {
+	font-size: 0;
+	line-height: 24px;
+	color: #8fbdec;
+  float: left;
+}
+
+.mailing-form input:focus + label {
+  padding-left: 24px;
+  bottom: 80px;
+  left: 1px;
+}
+
 /* Наведение на все input и эффект label*/
 
 .mailing-form input,
@@ -644,6 +644,17 @@ input[name="slide-radio"] {
   padding: 8px 13px;
   border: 2px solid rgba(46, 136, 228, 0.52);
   outline: 0;
+}
+
+.search-form input:focus + label,
+.mailing-form input:focus + label {
+  position: absolute;
+  font: inherit;
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: normal;
+	display: block;
+  color: #5b9ddf;
 }
 
 .feedback {
@@ -865,7 +876,8 @@ input[name="slide-radio"] {
   line-height: 18px;
   white-space: nowrap;
   list-style: none;
-  margin: 0;
+  margin-top: 45px;
+  margin-bottom: 24px;
   position: relative;
 }
 
@@ -910,7 +922,7 @@ input[name="slide-radio"] {
 }
 
 .paginator .next {
-  margin-left: 30px;
+  margin-left: 12px;
 }
 
 .prev a {
@@ -937,17 +949,14 @@ input[name="slide-radio"] {
 .next a {
   position: absolute;
   top: 5px;
-  right: 9px;
-  padding-left: 13px;
-  padding-right: 14px;
-  padding-top: 5px;
-  padding-bottom: 4px;
+  right: 0;
+  padding: 5px 0;
 }
 
 .next a::after {
   position: absolute;
   top: 6px;
-  right: 9px;
+  right: 0;
   height: 14px;
   width: 9px;
   content: "";
@@ -957,11 +966,11 @@ input[name="slide-radio"] {
 
 .prev a:hover,
 .next a:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: transparent;
 }
 
 .disabled {
-  /*opacity: 0.2;*/
+  opacity: 0.2;
 }
 
 
