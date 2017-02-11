@@ -40,6 +40,12 @@
       </nav>
       <div class="user-block right">
         <a class="search" href="#"></a>
+        <div class="search-window">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+            <input type="search" name="search" id="search" value="Что ищем?" onfocus="if (this.value == 'Что ищем?') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Что ищем?';}">
+            <label for="search">Что ищем?</label>
+          </form>
+        </div>
         <a class="login" href="#">Вход</a>
         <a class="cart" href="#">Пусто</a>
       </div>
@@ -197,7 +203,7 @@
           <a class="social-btn vkontakte" href="#">Вконтакте</a>
         </div>
         <ul class="footer-links left">
-          <li><a href="#" class="heart-link">Для поставщиков</a></li>
+          <li class="heart-link"><a href="#">Для поставщиков</a></li>
           <li><a href="#">Наши документы</a></li>
           <li><a href="#">О производстве</a></li>
           <li><a href="#">Экологические стандарты</a></li>

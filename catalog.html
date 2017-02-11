@@ -34,24 +34,47 @@
         </li>
       </ul>
     </nav>
-    <div class="user-block right">
-      <a class="search" href="#"></a>
-      <div class="search-window">
-        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-          <input type="search" name="search" id="search" value="Что ищем?" onfocus="if (this.value == 'Что ищем?') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Что ищем?';}">
-          <label for="search">Что ищем?</label>
-        </form>
-      </div>
-      <a class="login" href="#">Вход</a>
-      <a class="cart" href="#">2 товара
-      <div class="cart-window">
-        <table>
-          <tr><td>x</td><td>img</td><td>Пломбир с апельсиновым джемом</td><td>1,5 кг х 200 руб.</td><td>300 руб.</td></tr>
-          <tr><td>x</td><td>img</td><td>Клубничный пломбир с присыпкой  из белого шоколада</td><td>1,5 кг х 300 руб.</td><td>450 руб.</td></tr>
-        </table>
-      </div>
-      </a>
-    </div>
+    <ul class="user-block right">
+      <li class="search">
+        <a href="#"></a>
+        <div class="search-window">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+            <input type="search" name="search" id="search" value="Что ищем?" onfocus="if (this.value == 'Что ищем?') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Что ищем?';}">
+            <label for="search">Что ищем?</label>
+          </form>
+        </div>
+      </li>
+      <li class="login">
+        <a href="#">Вход</a>
+        <div class="login-window">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+            <input type="search" name="search" id="search" value="Что ищем?" onfocus="if (this.value == 'Что ищем?') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Что ищем?';}">
+            <label for="search">Что ищем?</label>
+          </form>
+        </div>
+      </li>
+      <li>
+        <a class="cart" href="#">2 товара</a>
+        <div class="cart-window">
+          <table>
+            <tr>
+              <td>x</td>
+              <td>img</td>
+              <td>Пломбир с апельсиновым джемом</td>
+              <td>1,5 кг х 200 руб.</td>
+              <td>300 руб.</td>
+            </tr>
+            <tr>
+              <td>x</td>
+              <td>img</td>
+              <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+              <td>1,5 кг х 300 руб.</td>
+              <td>450 руб.</td>
+            </tr>
+          </table>
+        </div>
+      </li>
+    </ul>
   </header>
 
   <main class="wrapper">
@@ -61,7 +84,7 @@
     <ul class="breadcrumb">
       <li><a href="index.html">Главная</a></li>
       <li><a href="#">Каталог</a></li>
-      <li><a>Сливочное</a></li>
+      <li class="canonical"><a>Сливочное</a></li>
     </ul>
     <h1>Сливочное мороженое</h1>
 
@@ -315,7 +338,7 @@
       <a class="social-btn vkontakte" href="#">Вконтакте</a>
     </div>
     <ul class="footer-links left">
-      <li><a href="#" class="heart-link">Для поставщиков</a></li>
+      <li class="heart-link"><a href="#">Для поставщиков</a></li>
       <li><a href="#">Наши документы</a></li>
       <li><a href="#">О производстве</a></li>
       <li><a href="#">Экологические стандарты</a></li>
