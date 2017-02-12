@@ -449,15 +449,18 @@ li:hover .sub-menu > .active a {
   background-position: -181px -5px;
 }
 
-.cart-full {
+.cart-full,
+.cart:hover {
   background: rgb(255, 255, 255);
 }
 
-.cart-full a {
+.cart-full a,
+.cart:hover a {
   color: #000000;
 }
 
-.cart-full::before {
+.cart-full::before,
+.cart:hover::before {
   background-position: -105px -106px;
 }
 
@@ -492,8 +495,9 @@ li:hover .sub-menu > .active a {
   width: 100%;
 }
 
-.cart-window table td {
-  max-width: 220px;
+.cart-window td {
+  max-width: 200px;
+  padding: 5px;
 }
 
 .cart-window img {
@@ -533,7 +537,8 @@ a.cart-del {
   margin-bottom: 15px;
 }
 
-.cart .btn-small {
+.cart .btn-small,
+.cart:hover .btn-small {
   font-size: 18px;
   line-height: 24px;
   color: #fefefe;
@@ -1532,12 +1537,13 @@ footer.catalog {
   float: left;
   margin-right: -5px;
   list-style: none;
+  margin-bottom: 6px;
 }
 
 .footer-links a {
   color: #ffffff;
   font-size: 13px;
-  line-height: 15px;
+  line-height: 16px;
   text-decoration: none;
   margin-left: 21px;
   padding-right: -6px;
