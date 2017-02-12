@@ -47,31 +47,42 @@
       <li class="login">
         <a href="#">Вход</a>
         <div class="login-window">
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-            <input type="search" name="search" id="search" value="Что ищем?" onfocus="if (this.value == 'Что ищем?') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Что ищем?';}">
-            <label for="search">Что ищем?</label>
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="get">
+            <input type="email" name="login-mail" id="login-mail" value="Электронная почта" onfocus="if (this.value == 'Электронная почта') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Электронная почта';}">
+            <label for="login-mail">Электронная почта</label>
+            <input type="text" name="login-password" id="login-password" value="Пароль" onfocus="if (this.value == 'Пароль') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Пароль';}">
+            <label for="login-password">Пароль</label>
+            <div class="login-links">
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </div>
+            <button type="submit" class="btn btn-small">Войти</button>
           </form>
         </div>
       </li>
-      <li>
-        <a class="cart" href="#">2 товара</a>
+      <li class="cart cart-full">
+        <a href="#">2 товара</a>
         <div class="cart-window">
-          <table>
-            <tr>
-              <td>x</td>
-              <td>img</td>
-              <td>Пломбир с апельсиновым джемом</td>
-              <td>1,5 кг х 200 руб.</td>
-              <td>300 руб.</td>
-            </tr>
-            <tr>
-              <td>x</td>
-              <td>img</td>
-              <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-              <td>1,5 кг х 300 руб.</td>
-              <td>450 руб.</td>
-            </tr>
-          </table>
+          <div class="cart-inside clearfix">
+            <table>
+              <tr>
+                <td><a class="cart-del" href="#">&nbsp;</a></td>
+                <td><img src="img/orange-citrus.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></td>
+                <td>Пломбир с апельсиновым джемом</td>
+                <td>1,5 кг х <span class="def-price">200 руб.</span></td>
+                <td>300 руб.</td>
+              </tr>
+              <tr>
+                <td><a class="cart-del" href="#">&nbsp;</a></td>
+                <td><img src="img/strawberry-white-chocolate.jpg" width="33" height="33" alt="Сливочно-клубничное с присыпкой из белого шоколада"></td>
+                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                <td>1,5 кг х <span class="def-price">300 руб.</span></td>
+                <td>450 руб.</td>
+              </tr>
+            </table>
+            <span class="full-price">Итого: 750 руб.</span>
+            <a href="#" class="btn btn-small">Оформить заказ</a>
+          </div>
         </div>
       </li>
     </ul>
