@@ -291,7 +291,6 @@ li:hover .sub-menu > .active a {
   width: 311px;
   box-sizing: border-box;
   margin: 20px 15px;
-  border-radius: 10px;
 }
 
 .search-form input:focus + label {
@@ -374,7 +373,6 @@ li:hover .sub-menu > .active a {
   line-height: 24px;
   width: 241px;
   box-sizing: border-box;
-  border-radius: 10px;
 }
 
 .login-form input:focus + label {
@@ -850,15 +848,22 @@ input[name="slide-radio"] {
 
 .feedback {
   position: relative;
-  width: 1200px;
-  height: 429px;
   margin-bottom: 8px;
-  background: url("../img/feedback-map.png") no-repeat 50%;
+  padding: 0;
+  height: 429px;
+  width: 100%;
+  /*background: url("../img/feedback-map.png") no-repeat 50%;*/
 }
+
+.feedback-wrapper {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+  }
 
 .adress-block {
   position: absolute;
-  top: 53px;
+  top: -371px;
   right: 27px;
   padding: 30px 24px;
   color: #323232;
