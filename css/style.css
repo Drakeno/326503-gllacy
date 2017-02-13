@@ -848,7 +848,7 @@ input[name="slide-radio"] {
 
 .feedback {
   position: relative;
-  margin-bottom: 8px;
+  margin-bottom: 3px;
   padding: 0;
   height: 429px;
   width: 100%;
@@ -863,7 +863,7 @@ input[name="slide-radio"] {
 
 .adress-block {
   position: absolute;
-  top: -371px;
+  top: 62px;
   right: 27px;
   padding: 30px 24px;
   color: #323232;
