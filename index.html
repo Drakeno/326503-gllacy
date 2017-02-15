@@ -6,7 +6,7 @@
   <title>HTML Academy: Глейси - Каталог товаров</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -208,7 +208,7 @@
             Для заказов по телефону:
             <strong>8 812 450-25-25</strong> (с 10 до 20 ежедневно)
           </p>
-          <a class="btn btn-small feedback-btn" href="form.html">Форма обратной связи</a>
+          <a class="btn btn-small feedback-btn" href="feedback-form.html">Форма обратной связи</a>
         </div>
       </div>
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.198230653264!2d30.323083!3d59.938794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2s!4v1486950238713"
@@ -240,17 +240,17 @@
     <a href="#" title="Закрыть" class="modal-close">Закрыть</a>
     <p>Мы обязательно вам ответим!</p>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-      <input type="text" name="feedback-name" id="feedback-name" value="Как вас зовут?" onfocus="if (this.value == 'Как вас зовут?') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Как вас зовут?';}">
+      <input type="text" name="feedback-name" id="feedback-name" value="Как вас зовут?" onfocus="if (this.value == 'Как вас зовут?') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Как вас зовут?';}" required>
       <label for="feedback-name">Как вас зовут?</label>
-      <input type="email" name="feedback-email" id="feedback-email" value="Ваша почта для ответа?" onfocus="if (this.value == 'Ваша почта для ответа?') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Ваша почта для ответа?';}">
+      <input type="email" name="feedback-email" id="feedback-email" value="Ваша почта для ответа?" onfocus="if (this.value == 'Ваша почта для ответа?') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Ваша почта для ответа?';}" required>
       <label for="feedback-email">Ваша почта для ответа?</label>
-      <textarea name="feedback-message" id="feedback-message" onfocus="if (this.value == 'Напишите что-нибудь...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Напишите что-нибудь...';}">Напишите что-нибудь...</textarea>
+      <textarea name="feedback-message" id="feedback-message" onfocus="if (this.value == 'Напишите что-нибудь...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Напишите что-нибудь...';}" required>Напишите что-нибудь...</textarea>
       <label for="feedback-message">Напишите что-нибудь...</label>
       <button class="btn btn-small right" type="submit">Отправить</button>
     </form>
   </div>
 
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

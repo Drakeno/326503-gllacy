@@ -24,16 +24,6 @@ close.addEventListener("click", function(event) {
   bcground.classList.remove("modal-overlay-on");
 });
 
-/*form.addEventListener("submit", function(event) {
-if (!name.value || !email.value) {
-    event.preventDefault();
-    console.log("Нужно заполнить все данные");
-  } else
-    event.preventDefault();
-    localStorage.setItem("name", name.value);
-
-});*/
-
 window.addEventListener("keydown", function(event) {
   if (event.keyCode === 27) {
     if (popup.classList.contains("feedback-modal-on")) {
