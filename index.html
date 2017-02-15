@@ -22,7 +22,7 @@
       <nav class="left">
         <ul class="main-menu">
           <li>
-            <a href="#">Каталог</a>
+            <a class="sub-catalog" href="#">Каталог</a>
             <ul class="sub-menu">
               <li class="hot-offer"><a href="#">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
@@ -35,7 +35,7 @@
             <a href="#">Доставка и оплата</a>
           </li>
           <li>
-            <a href="#">О компании</a>
+            <a href="#">О Компании</a>
           </li>
         </ul>
       </nav>
@@ -114,7 +114,7 @@
             <img src="img/orange-citrus.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           </a>
           <span class="price">
-          <span class="price-number">310 &#8381;</span>
+          <span class="price-number">310&#8381;</span>
           <span>/кг</span>
           </span>
           <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
@@ -129,7 +129,7 @@
             <img src="img/coffee-chocolate.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
           </a>
           <span class="price">
-          <span class="price-number">380 &#8381;</span>
+          <span class="price-number">380<span class="ruble">&#8381;</span></span>
           <span>/кг</span>
           </span>
           <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
@@ -144,7 +144,7 @@
             <img src="img/strawberry-white-chocolate.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
           </a>
           <span class="price">
-          <span class="price-number">355 &#8381;</span>
+          <span class="price-number">355<span class="ruble">&#8381;</span></span>
           <span>/кг</span>
           </span>
           <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
@@ -159,7 +159,7 @@
             <img src="img/creme-brulee-caramel.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
           </a>
           <span class="price">
-          <span class="price-number">415 &#8381;</span>
+          <span class="price-number">415<span class="ruble">&#8381;</span></span>
           <span>/кг</span>
           </span>
           <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
@@ -186,7 +186,7 @@
         <!-- COMMON BLOCK -->
         <div class="blogs left">
           <p>Новое в нашем блоге</p>
-          <a href="#"><h3>10  способов сервировки фруктовых щербетов к столу</h3></a>
+          <a href="#"><h3>10 способов сервировки фруктовых щербетов к столу</h3></a>
         </div>
         <div class="mailing right">
           <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
@@ -203,11 +203,10 @@
       <div class="feedback-wrapper">
         <div class="adress-block">
           <p class="fb-adress">Адрес главного офиса и офлайн магазина:</p>
-            <strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
+          <strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
           <p class="fb-phone">
             Для заказов по телефону:
-            <strong>8 812 450-25-25</strong>
-            (с 10 до 20 ежедневно)
+            <strong>8 812 450-25-25</strong> (с 10 до 20 ежедневно)
           </p>
           <a class="btn btn-small feedback-btn" href="#">Форма обратной связи</a>
         </div>
@@ -217,24 +216,22 @@
     </div>
 
 
-    <footer class="wrapper">
-      <div class="clearfix">
-        <div class="footer-social left">
-          <a class="social-btn twitter" href="#">Твиттер</a>
-          <a class="social-btn instagram" href="#">Инстаграм</a>
-          <a class="social-btn facebook" href="#">Фейсбук</a>
-          <a class="social-btn vkontakte" href="#">Вконтакте</a>
-        </div>
-        <ul class="footer-links left">
-          <li class="heart-link"><a href="#">Для поставщиков</a></li>
-          <li><a href="#">Наши документы</a></li>
-          <li><a href="#">О производстве</a></li>
-          <li><a href="#">Экологические стандарты</a></li>
-        </ul>
+    <footer class="wrapper clearfix ">
+      <div class="footer-social left">
+        <a class="social-btn twitter" href="#">Твиттер</a>
+        <a class="social-btn instagram" href="#">Инстаграм</a>
+        <a class="social-btn facebook" href="#">Фейсбук</a>
+        <a class="social-btn vkontakte" href="#">Вконтакте</a>
+      </div>
+      <ul class="footer-links left">
+        <li class="heart-link"><a href="#">Для поставщиков</a></li>
+        <li><a href="#">Наши документы</a></li>
+        <li><a href="#">О производстве</a></li>
+        <li><a href="#">Экологические стандарты</a></li>
+      </ul>
 
-        <div class="copyright right">
-          <span>Сделано в <a href="#">HTML Academy</a> © 2017</span>
-        </div>
+      <div class="copyright right">
+        <span>Сделано в <a href="#">HTML Academy</a> © 2017</span>
       </div>
     </footer>
   </div>
@@ -247,65 +244,13 @@
       <label for="feedback-name">Как вас зовут?</label>
       <input type="email" name="feedback-email" id="feedback-email" value="Ваша почта для ответа?" onfocus="if (this.value == 'Ваша почта для ответа?') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Ваша почта для ответа?';}">
       <label for="feedback-email">Ваша почта для ответа?</label>
-      <input type="text" name="feedback-message" id="feedback-message" value="Напишите что-нибудь..." onfocus="if (this.value == 'Напишите что-нибудь...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Напишите что-нибудь...';}">
+      <textarea name="feedback-message" id="feedback-message" onfocus="if (this.value == 'Напишите что-нибудь...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Напишите что-нибудь...';}">Напишите что-нибудь...</textarea>
       <label for="feedback-message">Напишите что-нибудь...</label>
       <button class="btn btn-small right" type="submit">Отправить</button>
     </form>
   </div>
 
-  <script>
-    var link = document.querySelector(".feedback-btn");
-    var popup = document.querySelector(".feedback-modal");
-    var bcground = document.querySelector(".modal-overlay");
-    var close = popup.querySelector(".modal-close");
-    var form = popup.querySelector("form");
-    var name = popup.querySelector("[name=feedback-name]");
-    var email = popup.querySelector("[name=feedback-email]");
-    var message = popup.querySelector("[name=feedback-message]");
-    var storage = localStorage.getItem("name");
-
-    link.addEventListener("click", function(event) {
-      event.preventDefault();
-      popup.classList.add("feedback-modal-on");
-      bcground.classList.add("modal-overlay-on");
-
-      if (storage) {
-        name.value = storage;
-      }
-    });
-
-    close.addEventListener("click", function(event) {
-      event.preventDefault();
-      popup.classList.remove("feedback-modal-on");
-      bcground.classList.remove("modal-overlay-on");
-    });
-
-      /*form.addEventListener("submit", function(event) {
-    if (!name.value || !email.value) {
-        event.preventDefault();
-        console.log("Нужно заполнить все данные");
-      } else
-        event.preventDefault();
-        localStorage.setItem("name", name.value);
-
-    });*/
-
-    window.addEventListener("keydown", function(event) {
-      if (event.keyCode === 27) {
-        if (popup.classList.contains("feedback-modal-on")) {
-          popup.classList.remove("feedback-modal-on");
-        }
-      }
-    });
-
-    window.addEventListener("keydown", function(event) {
-      if (event.keyCode === 27) {
-        if (bcground.classList.contains("modal-overlay-on")) {
-          bcground.classList.remove("modal-overlay-on");
-        }
-      }
-    });
-  </script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
