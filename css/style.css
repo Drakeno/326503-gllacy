@@ -1109,6 +1109,11 @@ input[name="slide-radio"] {
 
 .item:nth-child(4n) {
   margin-right: 0;
+  clear: right;
+}
+
+.item:nth-child(4n+1) {
+  clear: left;
 }
 
 .item h2,
